@@ -1,0 +1,8 @@
+[0915/140624.432:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0915/140903.482:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0915/145310.752:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0915/171407.579:ERROR:process_info.cc(329)] VirtualQueryEx: 拒绝访问。 (0x5)
+[0915/171407.581:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0915/171407.582:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[0915/172745.117:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
+[0915/173012.916:ERROR:prune_crash_reports.cc(36)] PruneCrashReportDatabase: Failed to get pending reports
