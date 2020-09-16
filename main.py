@@ -11,6 +11,7 @@ class ClassType:
     yibanzhuanye = 1
     hexinzhuanye = 2
     hexintongshi = 3
+    yibanttongshi = 4
 
 class CourseSelect:
     def __int__(self):
@@ -52,6 +53,12 @@ class CourseSelect:
             frame_C = brower.find_element_by_id("iframename")
             brower.switch_to.frame(frame_C)
 
+        elif classType == ClassType.yibanttongshi:
+            brower.find_element_by_xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[6]/div[1]/a[3]").click()
+            frame_C = brower.find_element_by_id("iframename")
+            brower.switch_to.frame(frame_C)
+            brower.find_element_by_xpath("/html[1]/body[1]/div[7]/div[1]/div[3]/table[1]/tbody[1]/tr[1]/td[1]/ul[1]/li[4]/a[1]").click()
+
         while 1:
             brower.find_element_by_xpath("/html[1]/body[1]/div[7]/div[1]/div[4]/form[1]/ul[1]/li[4]/input[1]").send_keys(className) #class
 
@@ -72,8 +79,8 @@ class CourseSelect:
 if __name__ == '__main__':
     username = ''  # 登录账号
     pwd = ''  # 登录账号对应密码
-    className = ''  # 选择课程 注意一定要是搜出来第一个选择的课程
-    classType = ClassType.yibanzhuanye
+    className = '1'  # 选择课程 注意一定要是搜出来第一个选择的课程
+    classType = ClassType.yibanttongshi
 
     xk =CourseSelect()
 
